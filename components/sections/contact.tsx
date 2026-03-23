@@ -233,7 +233,7 @@ export function Contact() {
               <Card className="hover:shadow-lg hover:shadow-accent/5 hover:border-accent/20 transition-all">
                 <CardContent className="p-5">
                   <a
-                    href="/resume.pdf"
+                    href="/Markus_Means_Resume_OU2026.pdf"
                     download
                     className="flex items-center gap-3 text-zinc-300 hover:text-accent transition-colors"
                   >
