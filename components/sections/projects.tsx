@@ -30,11 +30,11 @@ export function Projects() {
               Projects
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50">
-              Featured work
+              Selected projects
             </h2>
             <p className="mt-4 text-zinc-500 max-w-xl mx-auto">
-              A selection of projects I&apos;ve built — from real-time collaboration
-              tools to AI-powered platforms.
+              A couple of projects that reflect the same stack and problem-solving
+              style shown in my resume.
             </p>
           </div>
 
@@ -88,18 +88,20 @@ export function Projects() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Github className="mr-1.5 h-3.5 w-3.5" /> Code
+                          <Github className="mr-1.5 h-3.5 w-3.5" /> GitHub
                         </a>
                       </Button>
-                      <Button size="sm" asChild>
-                        <a
-                          href={project.liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="mr-1.5 h-3.5 w-3.5" /> Demo
-                        </a>
-                      </Button>
+                      {project.liveUrl && project.liveUrl !== project.githubUrl ? (
+                        <Button size="sm" asChild>
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="mr-1.5 h-3.5 w-3.5" /> Live
+                          </a>
+                        </Button>
+                      ) : null}
                     </div>
                   </CardContent>
                 </Card>

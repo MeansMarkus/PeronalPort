@@ -5,16 +5,17 @@ import { useSectionInView } from "@/hooks/use-section-in-view";
 import { Badge } from "@/components/ui/badge";
 
 const techHighlights = [
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
   "Python",
-  "Go",
+  "Java",
+  "C++",
+  "SQL",
+  "PyTorch",
+  "Transformers",
+  "OpenAI API",
+  "Flask",
   "PostgreSQL",
-  "AWS",
+  "Git",
   "Docker",
-  "Kubernetes",
 ];
 
 export function About() {
@@ -34,7 +35,7 @@ export function About() {
               About
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50">
-              Get to know me
+              Building software, systems, and AI tools
             </h2>
           </div>
 
@@ -61,21 +62,18 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p className="text-zinc-400 leading-relaxed mb-4">
-                I&apos;m a passionate software engineer with 5+ years of experience
-                building scalable web applications and distributed systems. I specialize
-                in full-stack development with a focus on creating performant, accessible,
-                and visually polished products.
+                I&apos;m a Computer Science student at the University of Oklahoma who
+                likes building practical software across web development, backend
+                systems, and machine learning.
               </p>
               <p className="text-zinc-400 leading-relaxed mb-4">
-                Currently, I&apos;m leading frontend architecture at TechCorp, where I
-                build design systems and micro-frontends that serve millions of users.
-                I thrive at the intersection of engineering excellence and great user
-                experience.
+                My resume spans software development internships, operations work,
+                and leadership roles that all sharpen the same core skills: ownership,
+                communication, and shipping reliable work.
               </p>
               <p className="text-zinc-400 leading-relaxed mb-6">
-                When I&apos;m not coding, you&apos;ll find me contributing to open-source
-                projects, writing technical blog posts, or exploring the latest in AI
-                and systems programming.
+                Outside class and projects, I stay active in competitive programming,
+                fraternity technology leadership, and community volunteer work.
               </p>
 
               {/* Tech badges */}

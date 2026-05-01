@@ -38,7 +38,7 @@ export function Navbar() {
           href="#"
           className="text-xl font-bold tracking-tight text-zinc-100 hover:text-accent transition-colors"
         >
-          Markus<span className="text-accent">.</span>
+          Markus Means<span className="text-accent">.</span>
         </a>
 
         {/* Desktop Links */}
@@ -59,7 +59,7 @@ export function Navbar() {
         {/* Desktop Social */}
         <div className="hidden md:flex items-center gap-1">
           <a
-            href="https://github.com"
+            href="https://github.com/MeansMarkus"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -68,7 +68,7 @@ export function Navbar() {
             <Github size={18} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/markus-means"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -118,7 +118,7 @@ export function Navbar() {
               ))}
               <div className="flex items-center gap-4 pt-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/MeansMarkus"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -127,7 +127,7 @@ export function Navbar() {
                   <Github size={22} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/markus-means"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"

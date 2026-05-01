@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+
 const geistSans = localFont({
   src: [
     {
@@ -44,32 +45,37 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Markus — Software Engineer",
+  title: "Markus Means — Computer Science Student & Software Developer",
   description:
-    "Portfolio of Markus, a software engineer building elegant solutions to complex problems. Specializing in full-stack development with React, Next.js, TypeScript, and cloud infrastructure.",
+    "Portfolio of Markus Means, a University of Oklahoma computer science student building AI tools, full-stack apps, and backend systems with Python, Java, C++, Flask, PostgreSQL, and PyTorch.",
   keywords: [
+    "Markus Means",
+    "University of Oklahoma",
     "software engineer",
+    "computer science student",
     "full-stack developer",
+    "machine learning",
+    "AI",
     "React",
-    "Next.js",
+    "Python",
     "TypeScript",
     "portfolio",
   ],
-  authors: [{ name: "Markus" }],
+  authors: [{ name: "Markus Means" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://markus.dev",
-    title: "Markus — Software Engineer",
+    url: "https://github.com/MeansMarkus",
+    title: "Markus Means — Computer Science Student & Software Developer",
     description:
-      "Building elegant solutions to complex problems. Full-stack engineer specializing in React, Next.js, and cloud infrastructure.",
-    siteName: "Markus Portfolio",
+      "Building AI tools, full-stack apps, and backend systems for school, work, and personal projects.",
+    siteName: "Markus Means Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Markus — Software Engineer",
+    title: "Markus Means — Computer Science Student & Software Developer",
     description:
-      "Building elegant solutions to complex problems. Full-stack engineer specializing in React, Next.js, and cloud infrastructure.",
+      "Building AI tools, full-stack apps, and backend systems for school, work, and personal projects.",
   },
   robots: { index: true, follow: true },
 };

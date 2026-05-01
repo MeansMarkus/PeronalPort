@@ -3,10 +3,9 @@
 import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@markus.dev", label: "Email" },
+  { icon: Github, href: "https://github.com/MeansMarkus", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/markus-means", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:markusmeanswe@gmail.com", label: "Email" },
 ];
 
 export function Footer() {
@@ -24,10 +23,10 @@ export function Footer() {
               href="#"
               className="text-lg font-bold tracking-tight text-zinc-100"
             >
-              Markus<span className="text-accent">.</span>
+              Markus Means<span className="text-accent">.</span>
             </a>
             <p className="text-sm text-zinc-600 mt-1">
-              Built with Next.js, Tailwind CSS &amp; Framer Motion
+              Computer Science student • AI, web, and backend development
             </p>
           </div>
 
@@ -63,7 +62,7 @@ export function Footer() {
 
         <div className="mt-8 pt-6 border-t border-zinc-800/40 text-center">
           <p className="text-xs text-zinc-600">
-            © {new Date().getFullYear()} Markus. All rights reserved.
+            © {new Date().getFullYear()} Markus Means. All rights reserved.
           </p>
         </div>
       </div>

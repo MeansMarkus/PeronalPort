@@ -12,52 +12,18 @@ export const navLinks: NavLink[] = [
 // ─── Projects ──────────────────────────────────────────────────
 export const projects: Project[] = [
   {
-    title: "CloudSync",
+    title: "Watchly",
     description:
-      "Real-time collaboration platform enabling teams to edit documents, share assets, and communicate seamlessly with sub-50ms latency.",
-    techStack: ["Next.js", "Socket.io", "PostgreSQL", "Redis", "Tailwind CSS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+      "Full-stack movie recommendation platform built around TMDB data, secure auth, and a PostgreSQL-backed pipeline for personalized watchlists.",
+    techStack: ["Python", "Flask", "TMDB API", "Firebase Auth", "PostgreSQL", "Railway"],
+    githubUrl: "https://github.com/MeansMarkus/MoviePicker",
   },
   {
-    title: "DevMetrics",
+    title: "Japanese AI Tutor",
     description:
-      "Developer productivity analytics dashboard with custom visualizations, PR cycle-time tracking, and team performance insights.",
-    techStack: ["React", "D3.js", "Node.js", "Express", "MongoDB"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    title: "SecureVault",
-    description:
-      "End-to-end encrypted file storage service with zero-knowledge architecture, client-side encryption, and granular sharing controls.",
-    techStack: ["Go", "AWS S3", "React", "TypeScript", "Docker"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    title: "AIAssist",
-    description:
-      "AI-powered code review tool that provides contextual suggestions, detects anti-patterns, and enforces team coding standards automatically.",
-    techStack: ["Python", "FastAPI", "OpenAI", "React", "PostgreSQL"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    title: "TradeFlow",
-    description:
-      "High-frequency algorithmic trading platform with real-time market data processing, backtesting engine, and risk management dashboards.",
-    techStack: ["Rust", "WebSocket", "TimescaleDB", "React", "Docker"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    title: "HealthTrack",
-    description:
-      "Cross-platform health & fitness tracking app with personalized insights, workout planning, and integration with wearable devices.",
-    techStack: ["React Native", "Firebase", "Node.js", "Express", "Chart.js"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+      "AI-powered language learning platform with adaptive conversation practice, spaced repetition, OpenAI GPT-3.5 Turbo integration, and a T5-based translation pipeline.",
+    techStack: ["Python", "SQL", "PyTorch", "Transformers (T5)", "OpenAI API", "Streamlit"],
+    githubUrl: "https://github.com/MeansMarkus/AI-ML-Japanese-Tutor",
   },
 ];
 
@@ -66,69 +32,102 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
     icon: "code",
-    skills: ["TypeScript", "JavaScript", "Python", "Java", "Go", "Rust"],
+    skills: ["Python", "Java", "C++", "JavaScript", "SQL", "HTML/CSS"],
   },
   {
-    title: "Frameworks",
+    title: "Machine Learning / AI",
     icon: "layers",
-    skills: ["React", "Next.js", "Node.js", "Express", "Django", "FastAPI"],
+    skills: [
+      "PyTorch",
+      "Transformers (T5)",
+      "OpenAI API",
+      "Model Fine-tuning",
+      "LLM Integration",
+      "Streamlit",
+    ],
   },
   {
-    title: "Tools",
+    title: "Web & Backend",
     icon: "wrench",
-    skills: ["Git", "Docker", "VS Code", "Figma", "Postman", "Webpack"],
+    skills: [
+      "Flask",
+      "Node.js",
+      "REST APIs",
+      "Firebase Authentication",
+      "PostgreSQL",
+      "Vercel",
+    ],
   },
   {
-    title: "Databases",
+    title: "Tools & Platforms",
     icon: "database",
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Firebase", "MySQL", "SQLite"],
+    skills: ["Git", "Docker", "CI/CD Pipelines", "Railway", "Linux", "Firebase"],
   },
   {
-    title: "DevOps",
+    title: "Data & Deployment",
     icon: "cloud",
-    skills: ["AWS", "GCP", "Vercel", "GitHub Actions", "Kubernetes", "Terraform"],
+    skills: ["PostgreSQL", "OpenStreetMap API", "TMDB API", "Vercel", "Railway", "GitHub Actions"],
   },
 ];
 
 // ─── Experience ────────────────────────────────────────────────
 export const experiences: Experience[] = [
   {
-    role: "Senior Software Engineer",
-    company: "TechCorp",
-    period: "2024 — Present",
+    role: "Software Developer Intern",
+    company: "AVO LLC",
+    period: "Jun 2025 — Dec 2025",
     description:
-      "Leading the frontend architecture team, building scalable design systems and micro-frontends.",
+      "Worked on backend and deployment workflows for a property-measurement pipeline and customer quote automation.",
     achievements: [
-      "Architected a component library used across 12 product teams, reducing UI development time by 40%",
-      "Led migration from REST to GraphQL, improving API response times by 60%",
-      "Mentored 5 junior engineers and established code review best practices",
-      "Implemented CI/CD pipelines reducing deployment time from 45min to 8min",
+      "Spearheaded a website revitalization that cut customer quote turnaround time by ~50% through engineering and automation",
+      "Designed and deployed an OpenStreetMap API pipeline with a PostgreSQL backend to compute property measurements and dynamic cost estimates in real time",
+      "Owned the project lifecycle from requirements gathering through Vercel deployment while coordinating with stakeholders to meet delivery milestones",
     ],
   },
   {
-    role: "Software Engineer",
-    company: "StartupXYZ",
-    period: "2022 — 2024",
+    role: "Operations Foreman",
+    company: "Moore Girls Softball Association",
+    period: "Aug 2020 — Oct 2024",
     description:
-      "Full-stack development for a B2B SaaS platform serving 10k+ enterprise users.",
+      "Managed athletic facilities and event operations supporting large seasonal schedules and volunteer coordination.",
     achievements: [
-      "Built real-time collaboration features using WebSockets, serving 50k concurrent users",
-      "Designed and implemented a multi-tenant authorization system with RBAC",
-      "Reduced page load time by 70% through code splitting and lazy loading optimizations",
-      "Shipped 3 major product features from ideation to production in under 6 months",
+      "Supported 300+ games annually while coordinating scheduling, logistics, and quality control across multiple simultaneous events",
+      "Built a reputation for consistent ownership, reliability, and judgment over a 4-year tenure",
+      "Developed leadership, time management, and cross-functional coordination skills in a high-pressure environment",
     ],
   },
   {
-    role: "Junior Developer",
-    company: "DevAgency",
-    period: "2020 — 2022",
+    role: "Director of Technology",
+    company: "Tau Kappa Omega Fraternity",
+    period: "2025 — Present",
     description:
-      "Developed client-facing web applications for startups and mid-size businesses.",
+      "Architecting and maintaining chapter technology infrastructure for a 50+ member organization.",
     achievements: [
-      "Delivered 15+ client projects on time and within budget across diverse industries",
-      "Introduced automated testing, achieving 85% code coverage across all projects",
-      "Built reusable component templates that reduced project bootstrapping time by 50%",
-      "Received 'Rising Star' award for exceptional performance in first year",
+      "Migrated the chapter to a more modern internal tooling setup and improved communication efficiency",
+      "Managed onboarding, deployment, and member support while reducing administrative overhead",
+      "Maintained dependable infrastructure for chapter-wide technology operations",
+    ],
+  },
+  {
+    role: "Competitive Programmer",
+    company: "ICPC Competitive Programming Club",
+    period: "2025 — Present",
+    description:
+      "Practice-focused role centered on advanced algorithms, data structures, and contest preparation.",
+    achievements: [
+      "Regularly solve problems involving segment trees, tries, union-find, Dijkstra, BFS/DFS, and topological sorting",
+      "Strengthened algorithmic thinking through team-based contest practice and peer review",
+    ],
+  },
+  {
+    role: "Volunteer",
+    company: "Courage League",
+    period: "2017 — Present",
+    description:
+      "Community outreach and event support for a special needs baseball league.",
+    achievements: [
+      "Volunteered in outreach programs supporting players, families, and event operations",
+      "Coordinated activities, fundraising, and logistics with teammates and organizers",
     ],
   },
 ];

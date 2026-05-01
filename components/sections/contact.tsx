@@ -63,11 +63,11 @@ export function Contact() {
               Contact
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50">
-              Let&apos;s work together
+              Let&apos;s build something
             </h2>
             <p className="mt-4 text-zinc-500 max-w-xl mx-auto">
-              Have a project in mind or just want to chat? Drop me a message and
-              I&apos;ll get back to you as soon as possible.
+              If you want to talk internships, projects, competitive programming,
+              or anything software-related, send me a message.
             </p>
           </div>
 
@@ -178,7 +178,7 @@ export function Contact() {
               <Card className="hover:shadow-lg hover:shadow-accent/5 hover:border-accent/20 transition-all">
                 <CardContent className="p-5">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/MeansMarkus"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-zinc-300 hover:text-accent transition-colors"
@@ -188,7 +188,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-sm">GitHub</p>
-                      <p className="text-xs text-zinc-500">@markus</p>
+                      <p className="text-xs text-zinc-500">@MeansMarkus</p>
                     </div>
                   </a>
                 </CardContent>
@@ -197,7 +197,7 @@ export function Contact() {
               <Card className="hover:shadow-lg hover:shadow-accent/5 hover:border-accent/20 transition-all">
                 <CardContent className="p-5">
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/markus-means"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-zinc-300 hover:text-accent transition-colors"
@@ -207,7 +207,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-sm">LinkedIn</p>
-                      <p className="text-xs text-zinc-500">/in/markus</p>
+                      <p className="text-xs text-zinc-500">/in/markus-means</p>
                     </div>
                   </a>
                 </CardContent>
@@ -216,7 +216,7 @@ export function Contact() {
               <Card className="hover:shadow-lg hover:shadow-accent/5 hover:border-accent/20 transition-all">
                 <CardContent className="p-5">
                   <a
-                    href="mailto:hello@markus.dev"
+                    href="mailto:markusmeanswe@gmail.com"
                     className="flex items-center gap-3 text-zinc-300 hover:text-accent transition-colors"
                   >
                     <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-zinc-800/80">
@@ -224,7 +224,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-sm">Email</p>
-                      <p className="text-xs text-zinc-500">hello@markus.dev</p>
+                      <p className="text-xs text-zinc-500">markusmeanswe@gmail.com</p>
                     </div>
                   </a>
                 </CardContent>

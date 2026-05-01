@@ -38,7 +38,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
             </span>
-            Open to opportunities
+            Computer Science Student at OU
           </span>
         </motion.div>
 
@@ -51,7 +51,7 @@ export function Hero() {
         >
           Hi, I&apos;m{" "}
           <span className="bg-gradient-to-r from-accent via-violet-400 to-indigo-400 bg-clip-text text-transparent">
-            Markus
+            Markus Means
           </span>
         </motion.h1>
 
@@ -62,7 +62,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Software Engineer
+          AI, Full-Stack, and Backend Development
         </motion.p>
 
         {/* Tagline */}
@@ -72,8 +72,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          Building elegant solutions to complex problems. I craft performant,
-          accessible, and beautiful web experiences that users love.
+          I build ML-powered tools, web apps, and backend systems that combine
+          practical engineering with clean product experiences.
         </motion.p>
 
         {/* CTA Buttons */}
