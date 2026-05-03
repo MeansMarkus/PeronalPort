@@ -66,8 +66,7 @@ export function Contact() {
               Let&apos;s build something
             </h2>
             <p className="mt-4 text-zinc-500 max-w-xl mx-auto">
-              If you want to talk internships, projects, competitive programming,
-              or anything software-related, send me a message.
+              If you want to talk internships, projects, or anything software or sports related send me a message.
             </p>
           </div>
 
@@ -197,7 +196,7 @@ export function Contact() {
               <Card className="hover:shadow-lg hover:shadow-accent/5 hover:border-accent/20 transition-all">
                 <CardContent className="p-5">
                   <a
-                    href="https://www.linkedin.com/in/markus-means"
+                    href="https://www.linkedin.com/in/markus-means-05408a229/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-zinc-300 hover:text-accent transition-colors"
@@ -207,7 +206,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-sm">LinkedIn</p>
-                      <p className="text-xs text-zinc-500">/in/markus-means</p>
+                      <p className="text-xs text-zinc-500">/in/markus-means-05408a229/</p>
                     </div>
                   </a>
                 </CardContent>

@@ -35,7 +35,7 @@ export function Skills() {
               Skills
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50">
-              My tech toolkit
+              My Tech Toolkit
             </h2>
           </div>
 

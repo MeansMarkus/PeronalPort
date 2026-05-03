@@ -25,7 +25,7 @@ export function Experience() {
               Experience
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50">
-              Where I&apos;ve worked
+              What I&apos;ve done
             </h2>
           </div>
 

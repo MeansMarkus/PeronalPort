@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useSectionInView } from "@/hooks/use-section-in-view";
 import { Badge } from "@/components/ui/badge";
 
@@ -40,15 +41,21 @@ export function About() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Profile image placeholder */}
+            {/* Profile image */}
             <motion.div
               className="relative mx-auto md:mx-0"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-3xl bg-gradient-to-br from-accent-dark/30 via-violet-900/20 to-indigo-900/10 border border-zinc-800/60 shadow-2xl shadow-accent-dark/10 flex items-center justify-center">
-                <span className="text-6xl">👨‍💻</span>
+              <div className="relative w-80 h-96 sm:w-96 sm:h-full rounded-3xl bg-gradient-to-br from-accent-dark/30 via-violet-900/20 to-indigo-900/10 border border-zinc-800/60 shadow-2xl shadow-accent-dark/10 overflow-hidden flex items-center justify-center">
+                <Image
+                  src="/images/avatar/avatar.png"
+                  alt="Markus Means"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Decorative elements */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-accent/5 border border-accent/10 -z-10" />

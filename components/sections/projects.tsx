@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
 import { useSectionInView } from "@/hooks/use-section-in-view";
 import { projects } from "@/lib/data";
@@ -47,20 +48,31 @@ export function Projects() {
                 transition={{ duration: 0.4, delay: 0.08 * index }}
               >
                 <Card className="h-full flex flex-col hover:shadow-xl hover:shadow-accent/5 hover:-translate-y-1 hover:border-accent/25 group">
-                  {/* Project image placeholder with gradient */}
-                  <div className="h-44 bg-gradient-to-br from-accent-dark/10 via-violet-900/10 to-indigo-900/5 rounded-t-2xl border-b border-zinc-800/40 flex items-center justify-center relative overflow-hidden">
-                    {/* Subtle grid inside card */}
-                    <div
-                      className="absolute inset-0 opacity-[0.06]"
-                      style={{
-                        backgroundImage:
-                          "linear-gradient(rgba(167,139,250,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(167,139,250,0.3) 1px, transparent 1px)",
-                        backgroundSize: "24px 24px",
-                      }}
-                    />
-                    <span className="text-4xl opacity-60 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                      {["🚀", "📊", "🔒", "🤖", "📈", "💪"][index]}
-                    </span>
+                  {/* Project image */}
+                  <div className="h-80 bg-gradient-to-br from-accent-dark/10 via-violet-900/10 to-indigo-900/5 rounded-t-2xl border-b border-zinc-800/40 flex items-center justify-center relative overflow-hidden">
+                    {project.image ? (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <>
+                        {/* Subtle grid inside card */}
+                        <div
+                          className="absolute inset-0 opacity-[0.06]"
+                          style={{
+                            backgroundImage:
+                              "linear-gradient(rgba(167,139,250,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(167,139,250,0.3) 1px, transparent 1px)",
+                            backgroundSize: "24px 24px",
+                          }}
+                        />
+                        <span className="text-4xl opacity-60 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                          {["🚀", "📊", "🔒", "🤖", "📈", "💪"][index]}
+                        </span>
+                      </>
+                    )}
                   </div>
 
                   <CardHeader className="pb-3">

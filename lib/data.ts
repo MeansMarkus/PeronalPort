@@ -17,6 +17,7 @@ export const projects: Project[] = [
       "Full-stack movie recommendation platform built around TMDB data, secure auth, and a PostgreSQL-backed pipeline for personalized watchlists.",
     techStack: ["Python", "Flask", "TMDB API", "Firebase Auth", "PostgreSQL", "Railway"],
     githubUrl: "https://github.com/MeansMarkus/MoviePicker",
+    image: "/images/projects/watchly.png",
   },
   {
     title: "Japanese AI Tutor",
@@ -24,6 +25,7 @@ export const projects: Project[] = [
       "AI-powered language learning platform with adaptive conversation practice, spaced repetition, OpenAI GPT-3.5 Turbo integration, and a T5-based translation pipeline.",
     techStack: ["Python", "SQL", "PyTorch", "Transformers (T5)", "OpenAI API", "Streamlit"],
     githubUrl: "https://github.com/MeansMarkus/AI-ML-Japanese-Tutor",
+    image: "/images/projects/japtutor.png",
   },
 ];
 

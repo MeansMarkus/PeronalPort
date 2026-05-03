@@ -68,7 +68,7 @@ export function Navbar() {
             <Github size={18} />
           </a>
           <a
-            href="https://www.linkedin.com/in/markus-means"
+            href="https://www.linkedin.com/in/markus-means-05408a229/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -100,43 +100,45 @@ export function Navbar() {
             className="md:hidden fixed inset-0 top-16 bg-zinc-950/98 backdrop-blur-xl z-40"
           >
             <ul className="flex flex-col items-center gap-6 pt-12">
-              {navLinks.map((link, i) => (
-                <motion.li
-                  key={link.href}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                >
+                  {navLinks.map((link, i) => (
+                    <motion.li
+                      key={link.href}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.05 }}
+                    >
+                      <a
+                        href={link.href}
+                        className="text-lg font-medium text-zinc-300 hover:text-accent transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {link.label}
+                      </a>
+                    </motion.li>
+                  ))}
+                </ul>
+
+                <div className="flex items-center justify-center gap-4 mt-6">
                   <a
-                    href={link.href}
-                    className="text-lg font-medium text-zinc-300 hover:text-accent transition-colors"
-                    onClick={() => setIsOpen(false)}
+                    href="https://github.com/MeansMarkus"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    className="p-2 text-zinc-500 hover:text-zinc-100 transition-colors"
                   >
-                    {link.label}
+                    <Github size={22} />
                   </a>
-                </motion.li>
-              ))}
-              <div className="flex items-center gap-4 pt-4">
-                <a
-                  href="https://github.com/MeansMarkus"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  className="p-2 text-zinc-500 hover:text-zinc-100 transition-colors"
-                >
-                  <Github size={22} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/markus-means"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  className="p-2 text-zinc-500 hover:text-zinc-100 transition-colors"
-                >
-                  <Linkedin size={22} />
-                </a>
-              </div>
-            </ul>
+
+                  <a
+                    href="https://www.linkedin.com/in/markus-means-05408a229/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    className="p-2 text-zinc-500 hover:text-zinc-100 transition-colors"
+                  >
+                    <Linkedin size={22} />
+                  </a>
+                </div>
           </motion.div>
         )}
       </AnimatePresence>

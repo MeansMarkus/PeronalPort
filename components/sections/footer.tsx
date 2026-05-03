@@ -4,7 +4,7 @@ import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/MeansMarkus", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/markus-means", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/markus-means-05408a229/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:markusmeanswe@gmail.com", label: "Email" },
 ];
 
